@@ -1,0 +1,38 @@
+﻿1. Change all LINQ statements from methods to query expression
+2. Add CRUD for Category.
+3. Use the new MenuService class available in this code
+3. The Product Show menu currently displays a flat list of products as below
+   *******************************************************************************************
+   ProductId, ProductName, BrandId, BrandName, CategoryId, CategoryName, ModelYear, ListPrice
+   ------------------
+   12, Electra Townie Original 21D - 2016, 1, Electra, 3, Cruisers Bicycles, 2016, 549.99
+   13, Electra Cruiser 1 (24-Inch) - 2016, 1, Electra, 3, Cruisers Bicycles, 2016, 269.99
+   14, Electra Girl's Hawaii 1 (16-inch) - 2015/2016, 1, Electra, 3, Cruisers Bicycles, 2016, 269.99
+   ...
+   *******************************************************************************************
+   
+   Change this to display a report as below
+   *******************************************************************************************
+   BrandId, BrandName
+   ------------------
+   1, Electra
+   ^^^^^^^^^^^^^^^^^^
+   ProductId, ProductName, CategoryId, CategoryName, ModelYear, ListPrice
+   ------------------
+   12, Electra Townie Original 21D - 2016, 3, Cruisers Bicycles, 2016, 549.99
+   13, Electra Cruiser 1 (24-Inch) - 2016, 3, Cruisers Bicycles, 2016, 269.99
+   14, Electra Girl's Hawaii 1 (16-inch) - 2015/2016, 3, Cruisers Bicycles, 2016, 269.99
+   ...
+   BrandId, BrandName
+   ------------------
+   2, Haro
+   ^^^^^^^^^^^^^^^^^^
+   ProductId, ProductName, CategoryId, CategoryName, ModelYear, ListPrice
+   ------------------
+   37, Haro Flightline One ST - 2017, 6, Mountain Bikes, 2017, 379.99
+   38, Haro Flightline Two 26 Plus - 2017, 6, Mountain Bikes, 2017, 549.99
+   41, Haro Shift R3 - 2017, 6, Mountain Bikes, 2017, 1469.99
+   ...
+   *******************************************************************************************
+4. Make the Report in point 3 above look more professional.
+   - Add field width, so each column is shown properly, etc.
